@@ -3,8 +3,13 @@
 // Later, you'll see how to organize your code into separate
 // files and modules.
 var Song = Backbone.Model.extend({
+	defaults:{
+		genre: 'Jazz'
+	},
 	initialize: function(){
 		console.log('new sone created');
 	}
 });
-var song = new Song();
+var song = new Song({
+	artist: "Faye"
+});
